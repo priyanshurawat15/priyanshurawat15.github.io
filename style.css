@@ -74,7 +74,7 @@ section{
   justify-content: center;
   flex-direction: column;
   background: #b3b3b300;
-  
+
 }
 
 .home:before{
@@ -102,6 +102,7 @@ section{
 .home .content.active{
   display: block;
 }
+
 
 .home .content h1{
   font-size: 2em;
@@ -225,7 +226,9 @@ section{
   height: 100%;
   object-fit: cover;
 }
-
+.ud{
+  display: none;
+}
 .slider-navigation{
   z-index: 888;
   position: relative;
@@ -295,11 +298,11 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba(1, 1, 1, 0.5);
+    background: rgba(255, 255, 255, 0.5);
   }
 
   header .navigation .navigation-items a{
-    color: #222;
+    color: rgb(255, 255, 255);
     font-size: 1.2em;
     margin: 20px;
   }
@@ -310,7 +313,7 @@ section{
   }
 
   header .navigation.active .navigation-items{
-    background: #fff;
+    background: rgb(0, 0, 0);
     width: 600px;
     max-width: 600px;
     margin: 20px;
@@ -339,13 +342,37 @@ section{
     background-position: center;
     transition: 0.3s ease;
   }
+  .content.active .slideshow-container {
+  display: none;
+
+    }
+  .content.active.ud{
+    font-size: 1.2em;
+    font-weight: 600;
+  }
+  .content.content.active .h1{
+    display: block;
+  }
 }
 
-@media (max-width: 560px){
+
+@media (max-width: 600px){
   .home .content h1{
-    font-size: 3em;
-    line-height: 60px;
+    font-size: 1em;
+    line-height: 30px;
+    margin-block-start: 0.3em;
+    margin-block-end: 0.3em;
   }
+
+  .home .content p{font-size: 0.8em;}
+
+} 
+@media (min-width:600) { 
+  .menu-btn .navigation-items{
+ display: none;
+}
+  
+  
 }
 
 
