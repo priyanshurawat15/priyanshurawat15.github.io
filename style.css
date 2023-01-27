@@ -6,7 +6,10 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-
+@media screen and (-webkit-min-device-pixel-ratio:0)
+and (min-resolution:.001dpcm) {
+selector{ property:value; }
+}
 header{
   z-index: 999;
   position: absolute;
