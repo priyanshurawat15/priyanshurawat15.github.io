@@ -6,10 +6,7 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-@media screen and (-webkit-min-device-pixel-ratio:0)
-and (min-resolution:.001dpcm) {
-selector{ property:value; }
-}
+
 header{
   z-index: 999;
   position: absolute;
@@ -262,7 +259,9 @@ section{
 .slider-navigation .nav-btn:hover{
   transform: scale(1.2);
 }
-
+.home .ok{
+  display: none;
+}
 .video-slide{
   position: absolute;
   width: 100%;
@@ -395,6 +394,7 @@ object-fit: cover;
 overflow: hidden;
 }
 
+
 /* Next & previous buttons */
 .prev, .next {
 cursor: pointer;
@@ -484,6 +484,19 @@ width: 10px;
 @media only screen and (max-width: 740px) {
 .prev, .next,.text {font-size: 14px}
 header .navigation{
+  display: none;
+}
+.home .ok{
+  display: block;
+  z-index: 000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.home .video-slide.active{
   display: none;
 }
 }
