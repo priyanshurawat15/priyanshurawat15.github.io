@@ -2,7 +2,7 @@ let text = document.getElementById('text');
 let bottle = document.getElementById('bottle');
 let leaf = document.getElementById('leaf');
 let leaf2 = document.getElementById('leaf2');
-let hill1 = document.getElementById('hill1');
+let hill12 = document.getElementById('hill12');
 let hill4 = document.getElementById('hill4');
 let hill5 = document.getElementById('hill5');
 

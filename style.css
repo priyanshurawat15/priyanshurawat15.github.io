@@ -92,6 +92,13 @@ header {
     overflow-y: hidden;
 
 }
+.parallax .leaf img{
+    width: 100%;
+   
+    position: absolute;
+    top: 0px;
+
+}
 .sec {
     position: relative;
     background: #0B4252;
@@ -109,8 +116,4 @@ header {
     font-size: 1em;
     color: #fff;
     font-weight: 300;
-}
-
-@media (orientation:portrait){
-
 }
