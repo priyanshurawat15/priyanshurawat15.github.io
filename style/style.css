@@ -312,8 +312,9 @@ flex: 1 1 21rem;
 }
 .heading span{
 font-size: 1.5rem;
-font-weight: 600;
+font-weight: 400;
 color: white;
+font-style: italic;
 
 }
 
@@ -618,8 +619,9 @@ padding-left: 2svw;
     }
     .heading span{
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 300;
     color: white;
+    font-style: italic;
     
     }
     
