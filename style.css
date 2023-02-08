@@ -327,6 +327,7 @@ color: white;
 .sec3{
     background: #002e34;
     margin-top: 0px;
+    justify-content: space-evenly;
 
 }
 
@@ -340,6 +341,33 @@ justify-content: space-evenly;
     max-height: auto;
     
 }
+.cards{
+    max-width: 10vw;
+    display: grid;
+    align-content: center;
+    padding-top: 5vh;
+}
+
+.cards img {
+    transition: 1s ease;
+    justify-self: center;
+    align-self: center;
+    
+    }
+.cards h1{
+    padding-top: 2vw;  
+    color: #fff;
+    align-self: center;
+    font-size: 1rem;
+    text-align: center;
+        }
+
+.cards img:hover{
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(1.5);
+    transition: 1s ease;
+    }
 
 .sec4{
     margin-top: 0px;
@@ -395,6 +423,7 @@ color: white;
 font-size: 1rem;
 font-weight: 500;
 color: var(--second-color);
+padding-left: 2svw;
 
 }
 .links a:hover{
@@ -459,7 +488,13 @@ color: var(--second-color);
         padding-bottom: 2vh;
         padding-top: 1vh;
     }
-
+    .cards h1{
+        padding-top: 2vw;  
+        color: #fff;
+        align-self: center;
+        font-size: 0.8rem;
+        text-align: center;
+            }
     #text {
         position: absolute;
         top:65vh;
@@ -676,7 +711,44 @@ color: var(--second-color);
         color: var(--second-color);
     }
     
+   .sec3 .cert{
+        display: contents;
+        justify-content: space-evenly;
+        
+        }
 
+    .sec3 .cert img{
+                max-width: 10vw;
+                max-height: auto;
+                
+            }
+    .cards{
+        max-width: 80vw;
+        display: flex;
+        justify-content: flex-start
+            }
+            
+    .cards img {
+                transition: 1s ease;
+                justify-self: center;
+                align-self: center;
+                
+                }
+    .cards h1{
+                padding-top: 2vw; 
+                padding-left: 5vw; 
+                color: #fff;
+                align-self: center;
+                font-size: 1rem;
+                text-align: center;
+                    }
+            
+    .cards img:hover{
+                -webkit-transform: scale(0.8);
+                -ms-transform: scale(0.8);
+                transform: scale(1.5);
+                transition: 1s ease;
+                }
 
 
 }
@@ -692,7 +764,7 @@ color: var(--second-color);
         text-align: center;
         padding-left: 7vw;
     }
-
+ 
 }
 
 @media (max-width:900px) {
