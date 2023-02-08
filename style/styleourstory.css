@@ -1068,8 +1068,79 @@ padding: 20px;
         flex-direction: column;
     }
 
-
+    .contactUs .title{
+        font-size: 1em;
+    }
     .inputBox{
         width: 100%;
     }
 }
+@media (max-width:400px) {
+    .contactUs{
+    padding: 20px;
+    
+        }
+    .box {
+            position: relative;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            grid-template-areas:
+                "form"
+                "info"
+                "map";
+            grid-gap: 20px;
+        }
+        .map{
+            min-height: 300px;
+            padding: 0px;
+        }
+    
+        .formBox .row50{
+    
+            display: flex;
+            gap: 0px;
+            flex-direction: column;
+        }
+        .formBox .row100{
+    
+            display: flex;
+            gap: 0px;
+            flex-direction: column;
+        }
+    
+    
+        .inputBox{
+            width: 100%;
+        }
+        .our {
+            background: #fff;
+            box-shadow: 0 5px 35px rgb(0 0 0 / 15%);
+            max-height: fit-content;
+            min-width: 0px;
+        }
+        .info h3{
+            font-size: 0.5em;
+        }
+        .our h3 {
+            color: var(--main-color);
+            font-weight: 500;
+            font-size: 1.4em;
+            margin-bottom: 10px;
+        }
+        .info {
+            background: #127782;
+        }
+        .info .infoBox div p {
+            color: #fff;
+            font-size: .8em;
+        }
+        .info .infoBox div a {
+            color: #fff;
+            font-size: .8em;
+        }
+        .sci {
+            /* margin-top: 40px; */
+            display: flex;
+        }
+    }
