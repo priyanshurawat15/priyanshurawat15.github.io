@@ -332,11 +332,12 @@ color: white;
 
 .sec3 .cert{
 display: flex;
-justify-content: space-between;
+justify-content: space-evenly;
 
 }
 .sec3 .cert img{
-    max-width: 10vw;
+    max-width: 5vw;
+    max-height: auto;
     
 }
 
@@ -360,7 +361,7 @@ justify-content: space-between;
 
 .contact{
     margin-top: 0px;
-    background: #012d32;
+    background: #032629;
 }
 
 .contact{
@@ -630,7 +631,7 @@ color: var(--second-color);
     
     .contact{
         margin-top: 0px;
-        background: #012d32;
+        background: #032629;
     }
     
     .contact{
