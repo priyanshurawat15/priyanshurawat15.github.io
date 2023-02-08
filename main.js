@@ -31,3 +31,23 @@ menu.onclick=() =>{
 
 }
 
+function sendEmail(){
+
+    Email.send({
+                Host : "smtp.gmail.com",
+                Username : "username",
+                Password : "password",
+                To : 'them@website.com',
+                From : document.getElementById("email").value,
+                Subject : "New Contact Form Enquiry",
+                Body : "firstname:" + document.getElementById("firstname").value
+                        + "\n"+ "secondname:" + document.getElementById("secondname").value
+                        + "\n"+"email:" + document.getElementById("email").value
+                        + "\n" + "mobile:" + document.getElementById("mobile").value
+                        + "\n" +"message:" + document.getElementById("message").value
+            }).then(
+            message => alert("Message sent Successuflly")
+    );
+
+
+}

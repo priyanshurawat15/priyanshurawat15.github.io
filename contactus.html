@@ -35,26 +35,26 @@
         <div class="box">
             <div class="our form">
                 <h3>Send a Message</h3>
-                <form>
+                <form onsubmit="sendEmail(); reset(); return false;">
                     <div class="formBox">
                         <div class="row50">
                                 <div class="inputBox">
                                     <span>First Name</span>
-                                    <input type="text" placeholder="john" required>  
+                                    <input type="text" placeholder="john" id="firstname" required>  
                                 </div>
                                 <div class="inputBox">
                                     <span>Last Name</span>
-                                    <input type="text" placeholder="john" required>  
+                                    <input type="text" placeholder="john" id="secondname" required>  
                                 </div>
                          </div>
                       <div class="row50">
                             <div class="inputBox">
                                 <span>Email</span>
-                                <input type="text" placeholder="Doe@gmail.com" required>  
+                                <input type="text" placeholder="Doe@gmail.com" id="email" required>  
                             </div>
                             <div class="inputBox">
                                 <span>Mobile</span>
-                                <input type="text" placeholder="123456789" required>  
+                                <input type="text" placeholder="123456789" id="mobile" required>  
                             </div>
 
 
@@ -62,7 +62,7 @@
                         <div class="row100">
                             <div class="inputBox">
                                 <span>Message</span>
-                                <textarea placeholder="Write your message here..." required></textarea> 
+                                <textarea placeholder="Write your message here..." id="message" required></textarea> 
 
                             </div>
                         </div>
@@ -178,7 +178,7 @@
 
 
 
-
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="main.js"></script>
 
 
